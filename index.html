@@ -67,7 +67,7 @@
                                         <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
                                             <nav role="navigation">
                                                 <ul class="nav justify-content-center">
-                                                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shayan-davodi-5ba283156" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shayan-davodi-b86588320" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
                                                     </li>
                                                     <li class="nav-item"><a class="nav-link" href="https://github.com/sh008" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
                                                     </li>
@@ -88,7 +88,7 @@
                             <div class="col-md-6">
                                 <h2 class="h2 fw-light mb-4">About Me</h2>
                                 <p>
-                                    HELLO! I'm Shayan Davoodi I've been doing web development for about 10 years. I love challenges and doing hard work As a full stack, I have the ability to launch a website with all the features.
+                                    HELLO! I'm Shayan Davoodi I've been doing web development for about <span id="workHistory"></span> years. I love challenges and doing hard work As a full stack, I have the ability to launch a website with all the features.
 
                                 </p>
                             </div>
@@ -99,7 +99,7 @@
                                         <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Age</div>
                                     </div>
                                     <div class="col-sm-7">
-                                        <div class="pb-2">31</div>
+                                        <div class="pb-2" id="ageField">31</div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
@@ -187,10 +187,22 @@
                         <div class="timeline">
                             <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
                                 <div class="timeline-head px-4 pt-3">
+                                    <div class="h5">Angular Developer <span class="text-muted h6">at Tosan</span></div>
+                                </div>
+                                <div class="timeline-body px-4 pb-4">
+                                    <div class="text-muted text-small mb-3">January, 2024 - Present</div>
+                                    <div>Core Banking</div>
+                                    <div>
+                                        <span class="text-muted">Tools & Technologies:</span> Angular
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+                                <div class="timeline-head px-4 pt-3">
                                     <div class="h5">Web Developer <span class="text-muted h6">at BRP Creative</span></div>
                                 </div>
                                 <div class="timeline-body px-4 pb-4">
-                                    <div class="text-muted text-small mb-3">May, 2020 - Present</div>
+                                    <div class="text-muted text-small mb-3">May, 2020</div>
                                     <div>BRP is a web develop agency locate on Australia.</div>
                                     <div>
                                         <span class="text-muted">Tools & Technologies:</span> Angular, Node.js, express, MySQL
@@ -326,6 +338,12 @@
     <script src="scripts/mdb.min.js?ver=1.2.1"></script>
     <script src="scripts/aos.js?ver=1.2.1"></script>
     <script src="scripts/main.js?ver=1.2.1"></script>
+    <script>
+        const now = (new Date()).getFullYear();
+        document.querySelector("#ageField").innerHTML = now - 1991;
+        document.querySelector("#workHistory").innerHTML = now - 2014;
+
+    </script>
 </body>
 
 </html>
